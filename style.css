@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+body{
+    background-color: antiquewhite;
+}
+
+/* navbar */
+nav{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #000000;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(206, 206, 206);
+}
+
+/* logo img and text */
+.brand{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;   
+    font-size: x-large;
+}
+
+.brand img{
+    width: 60px;
+}
+
+
+/* container */
+.container{
+    min-height: 70vh;
+    background: #000;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 80vw;
+    border-radius: 12px;
+    padding: 34px;
+    background: url('util/bg.jpg');
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    width: 75vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 18px;
+    opacity: .75;
+    padding: 0.25rem 1rem;
+}
+
+
+.songItem:hover{
+    opacity: 1;
+}
+
+.songItem:nth-child(1){
+    opacity: 1;
+}
+
+.songItem img{
+    width: 43px;
+    margin-left: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.songlistplay{
+    display: flex;
+    align-items: center;
+}
+
+.songItemPlay{
+    font-size: 2.5rem;
+}
+
+
+/* bottom */
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    color: white;;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor:pointer;
+}
+
+.master-control{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.master-control:hover{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: fixed;
+    left: 10vw;
+    bottom: 2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
