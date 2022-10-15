@@ -120,9 +120,6 @@ nav ul li a:hover{
     opacity: 1;
 }
 
-.songItem:nth-child(1){
-    opacity: 1;
-}
 
 .songItem img{
     width: 43px;
@@ -138,6 +135,9 @@ nav ul li a:hover{
 
 .songItemPlay{
     font-size: 2.5rem;
+}
+.songItemPlay:hover{
+    cursor: pointer;
 }
 
 
@@ -172,9 +172,14 @@ nav ul li a:hover{
     left: 10vw;
     bottom: 2rem;
     font-family: 'Varela Round', sans-serif;
+    display: flex;
 }
 
 .songInfo img{
     opacity: 0;
     transition: opacity .5s ease-in;
+}
+.songDet{
+    display: flex;
+    flex-direction: column;
 }

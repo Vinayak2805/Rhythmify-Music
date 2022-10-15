@@ -41,45 +41,48 @@
 
     <div class="container">
         <div class="songlist">
-            <div class="songItem">
+            <div class="songItem" id="s0">
                 <img src="util/covers/1.jpg" alt="1" />
-                <span class="songName">Warriyo - Mortals [NCS Release]</span>
+                <span class="songName">Stereo Love - Edward Maya, Vika Jigulina</span>
                 <span class="songlistplay">
-                    <span class="timeStamp">3:50</span>
+                    <span class="timeStamp">4:08</span>
                     <span class="material-symbols-outlined songItemPlay" id="0">play_circle</span>
                 </span>
             </div>
-            <div class="songItem">
+            <div class="songItem" id="s1">
                 <img src="util/covers/2.jpg" alt="1" />
-                <span class="songName">Cielo - Huma-Huma</span>
+                <span class="songName">Guns N Roses - Sweet Child O Mine</span>
                 <span class="songlistplay">
-                    <span class="timeStamp">2:33</span>
+                    <span class="timeStamp">5:56</span>
                     <span class="material-symbols-outlined songItemPlay" id="1">play_circle</span>
                 </span>
             </div>
-            <div class="songItem">
+            <div class="songItem" id="s2">
                 <img src="util/covers/3.jpg" alt="1" />
-                <span class="songName">DEAF KEV - Invincible [NCS Release]-320k</span>
+                <span class="songName">Save Your Tears - Weekend, Ariana Grande</span>
                 <span class="songlistplay">
-                    <span class="timeStamp">4:33</span>
+                    <span class="timeStamp">3:13</span>
                     <span class="material-symbols-outlined songItemPlay" id="2">play_circle</span>
                 </span>
             </div>
         </div>
         <div class="songBanner"></div>
     </div>
-
+    
     <div class="bottom">
         <input type="range" id="myProgressBar" min="0" max="100" value="0" />
         <div class="icons">
             <!-- icons -->
-            <span class="material-symbols-outlined master-control"> skip_previous </span>
+            <span class="material-symbols-outlined master-control" id="previous"> skip_previous </span>
             <span class="material-symbols-outlined master-control" id="masterPlay">play_circle</span>
-            <span class="material-symbols-outlined master-control"> skip_next </span>
+            <span class="material-symbols-outlined master-control" id="next"> skip_next </span>
         </div>
         <div class="songInfo">
             <img src="util/songPlay.gif" width="45px" height="20vh" id="gif" />
-            <span id="masterSongName">Songname</span>
+            <span class="songDet">
+                <span id="masterSongName">Stereo Love - Edward Maya, Vika Jigulina</span>
+                <span id="duration">00:00</span>
+            </span>
         </div>
     </div>
 
