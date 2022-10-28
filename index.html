@@ -11,7 +11,7 @@
     <style>
         .material-symbols-outlined {
             font-variation-settings:
-            'FILL' 0,
+            'FILL' 1,
             'wght' 400,
             'GRAD' 0,
             'opsz' 48
@@ -42,7 +42,8 @@
     <div class="container">
         <div class="songlist">
             <div class="songItem" id="s0">
-                <img src="util/covers/1.jpg" alt="1" />
+                <img src="util/songPlay.gif" class="coverGif hidden">
+                <img src="util/covers/1.jpg"/>
                 <span class="songName">Stereo Love - Edward Maya, Vika Jigulina</span>
                 <span class="songlistplay">
                     <span class="timeStamp">4:08</span>
@@ -50,7 +51,8 @@
                 </span>
             </div>
             <div class="songItem" id="s1">
-                <img src="util/covers/2.jpg" alt="1" />
+                <img src="util/songPlay.gif" class="coverGif hidden">
+                <img src="util/covers/2.jpg"/>
                 <span class="songName">Guns N Roses - Sweet Child O Mine</span>
                 <span class="songlistplay">
                     <span class="timeStamp">5:56</span>
@@ -58,7 +60,8 @@
                 </span>
             </div>
             <div class="songItem" id="s2">
-                <img src="util/covers/3.jpg" alt="1" />
+                <img src="util/songPlay.gif" class="coverGif hidden">
+                <img src="util/covers/3.jpg"/>
                 <span class="songName">Save Your Tears - Weekend, Ariana Grande</span>
                 <span class="songlistplay">
                     <span class="timeStamp">3:13</span>
@@ -69,23 +72,29 @@
         <div class="songBanner"></div>
     </div>
     
+    
     <div class="bottom">
-        <input type="range" id="myProgressBar" min="0" max="100" value="0" />
         <div class="icons">
-            <!-- icons -->
             <span class="material-symbols-outlined master-control" id="previous"> skip_previous </span>
             <span class="material-symbols-outlined master-control" id="masterPlay">play_circle</span>
             <span class="material-symbols-outlined master-control" id="next"> skip_next </span>
         </div>
+        <div class="progress">
+            <span id="duration">00:00</span>
+            <input type="range" id="myProgressBar" min="0" max="100" value="0" />
+            <span id="totalDuration">04:08</span>
+            
+        </div>
         <div class="songInfo">
             <img src="util/songPlay.gif" width="45px" height="20vh" id="gif" />
-            <span class="songDet">
+            <div class="songDet">
+                <img src="util/covers/1.jpg" width="50px" height="50px" id="currentSongImg"/>
                 <span id="masterSongName">Stereo Love - Edward Maya, Vika Jigulina</span>
-                <span id="duration">00:00</span>
-            </span>
+             </div>
         </div>
     </div>
-
+    </div>
+    
     <script src="app.js"></script>
 </body>
 

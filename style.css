@@ -100,6 +100,16 @@ nav ul li a:hover{
     background: url('util/bg.jpg');
 }
 
+.hidden{
+    visibility: hidden;
+    
+}
+
+.coverGif{
+    position: absolute;
+
+}
+
 .songItem{
     height: 50px;
     display: flex;
@@ -123,6 +133,7 @@ nav ul li a:hover{
 
 .songItem img{
     width: 43px;
+    height: 43px;
     margin-left: 12px;
     border-radius: 50%;
     cursor: pointer;
@@ -151,16 +162,21 @@ nav ul li a:hover{
     box-sizing: border-box;
     padding: 1.5rem;
     color: white;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #myProgressBar{
-    width: 80vw;
+    width: 40vw;
     cursor:pointer;
+    opacity: .75;
 }
 
 .master-control{
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .master-control:hover{
@@ -169,17 +185,38 @@ nav ul li a:hover{
 
 .songInfo{
     position: fixed;
-    left: 10vw;
-    bottom: 2rem;
+    left: 1rem;
+    /* bottom: 2rem; */
     font-family: 'Varela Round', sans-serif;
     display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    font-size: .75rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.songInfo img{
+#gif{
     opacity: 0;
     transition: opacity .5s ease-in;
+    margin: auto;
+}
+
+#currentSongImg{
+    border-radius: 50%;
+    margin: 5px;
 }
 .songDet{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .songDet{
+        visibility: hidden;
+    }
 }
